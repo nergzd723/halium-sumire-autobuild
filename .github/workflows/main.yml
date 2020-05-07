@@ -64,12 +64,8 @@ jobs:
          sudo ./halium/devices/setup sumire
     - name: Build HAL
       run: |
-        source halium.env
-        cd $ANDROID_ROOT
-        source build/envsetup.sh
-        breakfast sumire
-        mka halium-boot
-        mka systemimage
+         chmod +x build-hal.sh
+         bash -x build-hal.sh
       shell: bash
 
     - name : Upload boot image
