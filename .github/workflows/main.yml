@@ -63,6 +63,7 @@ jobs:
          sudo ./halium/devices/setup sumire
     - name: Build HAL
       run: |
+        cd $ANDROID_ROOT
         source build/envsetup.sh
         breakfast sumire
         mka halium-boot
