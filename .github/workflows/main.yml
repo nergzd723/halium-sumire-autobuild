@@ -59,10 +59,12 @@ jobs:
     
     - name: Clone device spec source
       run: |
+         source halium.env
          cd $ANDROID_ROOT
          sudo ./halium/devices/setup sumire
     - name: Build HAL
       run: |
+        source halium.env
         cd $ANDROID_ROOT
         source build/envsetup.sh
         breakfast sumire
