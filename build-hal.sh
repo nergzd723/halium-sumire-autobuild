@@ -12,5 +12,5 @@ make -j$(nproc) hybris-boot
 make -j$(nproc) systemimage 
 
 echo "md5sum hybris-boot.img and system.img"
-md5sum $ANDROID_ROOT/out/target/product/santoni/hybris-boot.img
-md5sum $ANDROID_ROOT/out/target/product/santoni/system.img
+md5sum $ANDROID_ROOT/out/target/product/sumire/hybris-boot.img
+md5sum $ANDROID_ROOT/out/target/product/sumire/system.img
